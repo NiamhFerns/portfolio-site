@@ -1,131 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
+	<link rel="stylesheet" href="styles.css" type="text/css" />
 
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 450px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 450px;
-  display: none;
-}
-
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
+	<meta lang="EN" charset="utf-8" >
 </head>
 <body>
+	
+	<nav>
+		<a href="https://sfs-webdev.massey.ac.nz/site1439">HOME</a>
+		<p> | </p>
+		<a href="https://sfs-webdev.massey.ac.nz/site1439#158256">COURSEWORK</a>
+		<p> | </p>
+		<a href="https://sfs-webdev.massey.ac.nz/site1439#contact">CONTACT</a>
+	</nav>
 
-<h2>Welcome to SFS-WebDev</h2>
-<p>Your personal webspace...</p>
+	<header id="welcome">
+		<!-- PROFILE PICTURE HERE -->
+		<h1>Niamh Ferns</h1>
+		<p>Tech Nerd & Aspiring Game Dev</p>
+	</header>
 
-<div class="tab">
-  <button class="tablinks" onmouseover="openCity(event, '158120')">158.120</button>
-  <button class="tablinks" onmouseover="openCity(event, '158256')">158.256</button>
-  <button class="tablinks" onmouseover="openCity(event, 'About')">About</button>
-</div>
+	<main>
+		<article id="about-me">
+			
+		</article>
+		
+		<article id="porfolio">
 
-<div id="158120" class="tabcontent">
-  <h2>Welcome to 158.120!</h2>
-  <p> </p>
+		</article>
+		
+		<article id="labs" id="158256">
 
-  <h3><p>To access your Moodle site:</p> </h3>
-  <blockquote><p>sfs-webdev.massey.ac.nz/<bold><code>your_site_identifier</code></bold>/moodle</p> </blockquote>
-  <blockquote><p>(replace <code><bold>your_site_identifier</code></bold> with the number assigned to you, e.g., site0123)</p> </blockquote>
+		</article>
 
-<h4>Access to your Moodle site's database and files</h4>
-<blockquote><p> <a href="https://sfs-webdev.massey.ac.nz:20000">sfs-webdev.massey.ac.nz:20000</p></a> </blockquote>
-<blockquote><p>(you will be prompted for username and password)</p> </blockquote>
-  
-</div>
+		<article id="assignments">
 
-<div id="158256" class="tabcontent">
-<h2>Welcome to 158.256!</h2>
-<p> </p>
+		</article>
+	</main>
 
-<h3><p>To access your site:</p> </h3>
-<blockquote><p>sfs-webdev.massey.ac.nz/<bold><code>your_site_identifier</code></bold>/apps</p> </blockquote>
-<blockquote><p>(replace <code><bold>your_site_identifier</code></bold> with the number assigned to you, e.g., site0123)</p> </blockquote>
+	<footer id="contact">
 
-<h4>Access to your site's database and files</h4>
-<blockquote><p> <a href="https://sfs-webdev.massey.ac.nz:20000">sfs-webdev.massey.ac.nz:20000</p></a> </blockquote>
-<blockquote><p>(you will be prompted for username and password)</p> </blockquote>
-
-<h4>To use myphpadmin for purely accessing your site's database enter</h4>
-<a href="https://sfs-webdev.massey.ac.nz/phpmyadmin"><blockquote><p>https://sfs-webdev.massey.ac.nz/phpmyadmin</p> </blockquote></a>
-<blockquote><p>(you will be prompted for username and password)</p> </blockquote>
-<p>
-</div>
-
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  Check <a href="https://massey.ac.nz">massey.ac.nz</a> for more details.
-
-  
-</div>
-
-<div class="clearfix"></div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
+	</footer>
 </body>
-</html> 
-
+</html>
