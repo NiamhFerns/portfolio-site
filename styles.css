@@ -1,20 +1,61 @@
+:root {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: monospace;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
 nav {
 	position: fixed;
 	width: 20%;
-	height: 4rem;
+	height: 100%;
 	font-size: 1.3rem;
 	font-weight: bold;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
+	background-color: darkgrey;
+}
+
+nav a {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	text-decoration: none;
+}
+
+main section {
+	margin: 0 auto;
+	width: 60%;
+	padding: 0rem 1rem 0rem 1rem;
+}
+main section article {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+header {
+	position: fixed;
+	width: 20%;
+	height: 100%;
+	margin: 0% 0% 0% 80%;
+	font-size: 1.3rem;
+	font-weight: bold;
+	background-color: darkgrey;
+}
+
+#leader-image {
+	background-color: khaki;
+	height: 100vh;
 }
 
 #welcome {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
+	position: fixed;
+	width: inherit;
+	background: #cccccc;
 }
